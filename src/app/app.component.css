@@ -1,13 +1,23 @@
-body{font-family: 'Montserrat' sans-serif;
-}
-
 @media only screen and (min-width:1200px){
 	.nav-item > .nav-link{padding: 5px 20px !important;
 		display: block !important;}
 }
 
 @media only screen and (max-width:992px){
+  .content-banner{color: #ffffff;
+    background-image: url(../assets/img/banner.jpg);
+    min-height:400px;
+    height:100vh;
+    width: 100%;
+    position: relative;
+    background-attachment:fixed ;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 125px;
+    overflow: hidden;
+    }
 	.header-inner{background-color: white!important;
+    overflow: hidden;
 	}
 	.nav-item > .nav-link{
 		color: black!important}
@@ -24,9 +34,11 @@ background-attachment:fixed ;
 background-position: center center;
 background-size: cover;
 padding-top: 125px;
+overflow: hidden;
 }
 
 .content-banner:before{
+  overflow: hidden;
 position:absolute;
 content: '';
 width: 100%;
@@ -130,6 +142,21 @@ font-weight: 500;
 	font-size: 30px;
 }
 
+.whyViya{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.whyViya h1{
+  font-size: 45px;
+  font-family: 'Kalam',cursive;
+
+}
+
+.whyViya p{
+  font-family: 'Dancing Script';
+  font-size: 30px;
+}
 
 .skills h2{
 	font-family: 'Times New Roman', Times, serif;
@@ -139,6 +166,7 @@ font-weight: 500;
 	text-align: center;
 	font-family: 'Courier New', Courier, monospace;
 }
+
 .homeGallary{
 background-image: url('../assets/img/banner2.jpg');
 min-height:400px;
@@ -179,15 +207,6 @@ z-index: -1;
 	font-size: 40px;
 }
 
-.btn{
-	background-color: blue; 
-	border-radius: 100px;
-	
-}
-
-.btn:hover{
-	background-color: darkgrey;
-}
 
 .services{
 	font-family: 'Kalam', cursive;
@@ -231,6 +250,21 @@ z-index: -1;
 		padding: 0px 10px 0px 10px;
 	}
 
+  
+.whyViya{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.whyViya h1{
+  font-family: 'Kalam',cursive;
+}
+
+.whyViya p{
+  font-family: 'Dancing Script';
+  font-size: 20px;
+  text-align: justify;
+}
 	.homeGallary h1{
 		color: white;
 		z-index: 2;
@@ -247,9 +281,6 @@ z-index: -1;
 	}
         
 }
-
-
-
 
 
 /* Separator */
@@ -1288,7 +1319,60 @@ z-index: -1;
   }
 }
 
-/* divider */
+.floating{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:40px;
+	left:30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.float-button{
+	margin-top:20px;
+}
 
 
+/* Faq */
+.text-secondary {
+    color: #3d5d6f;
+  }
   
+  .h4,
+ .faq h4 {
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+.faq h2 {
+    
+    color: #333;
+    font-family: 'Kalam', cursive; 
+  }
+  
+  .right-0 {
+    right: 0;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .h-100 {
+    height: 100%;
+  }
+  
+ .faq a.text-secondary:focus,
+ .faq a.text-secondary:hover {
+    text-decoration: none;
+    color: #22343e;
+  }
+  
+
+
