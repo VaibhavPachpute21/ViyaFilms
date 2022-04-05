@@ -28,7 +28,7 @@
               <a class="nav-link" routerLink="contactUs">Contact</a>
             </li>
           </ul>
-          <a href="https://www.instagram.com/viyafilms/" target="_blank"><button class="header-btn my-2 my-sm-0"
+          <a href="https://www.instagram.com/viyafilms/" target="_blank" ><button class="header-btn my-2 my-sm-0"
               type="submit"><i class="bi bi-instagram"></i></button></a>&nbsp;
           <a href="https://wa.me/919359979571" target="_blank"><button class="header-btn my-2 my-sm-0" type="submit"><i
                 class="bi bi-whatsapp"></i></button></a>
@@ -37,7 +37,9 @@
     </div>
   </div>
 </header>
-<router-outlet></router-outlet>
+
+<router-outlet (deactivate)="onDeactivate()"></router-outlet>
+
 <app-footer></app-footer>
 <!-- Floating Button -->
 <a href="https://wa.me/919359979571" class="floating" target="_blank">

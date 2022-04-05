@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'viyafilms';
+  onDeactivate() {
+    document.body.scrollTop = 0;
+    // Alternatively, you can scroll to top by using this other call:
+    window.scrollTo(0, 0)
+  }
 }
+
+
